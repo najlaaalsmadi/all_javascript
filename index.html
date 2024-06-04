@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script src="myScript.js"></script>
+
+</head>
+<body>
+    <!-- <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+       /* var d = new Date("2022-03-25");
+        document.getElementById("demo").innerHTML = d;*/
+        var d = new Date("0");
+        document.getElementById("demo").innerHTML = d;
+/*const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const index = fruits.indexOf("A");
+
+if (index !== -1) {
+    document.getElementById("demo2").innerHTML = index;
+    console.log("Fruit found in the catalog: " + index);
+} else {
+    document.getElementById("demo2").innerHTML = index;
+    console.log("Fruit not found" + index);
+}
+*/
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const cars = new Array("Saab", "Volvo", "BMW");
+
+let found = false;
+let index = -1;
+
+for (let i = 0; i < fruits.length; i++) {
+    if (fruits[i] === "Apple") {
+        found = true;
+        index = i;
+        break;
+    }
+}
+
+if (found) {
+    console.log("Fruit found in the catalog: " + index);
+    document.getElementById("demo2").innerHTML = index;
+
+} else {
+    console.log("Fruit not found" + index);
+    document.getElementById("demo2").innerHTML = index;
+
+}
+
+/*const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const foundFruit = fruits.find(fruit => fruit === "Apple");
+
+if (foundFruit) {
+    console.log("Fruit found in the catalog: " + fruits.indexOf(foundFruit));
+    document.getElementById("demo2").innerHTML = fruits.indexOf(foundFruit);
+
+} else {
+    document.getElementById("demo2").innerHTML = fruits.indexOf(foundFruit);
+    console.log("Fruit not found" + fruits.indexOf(foundFruit));
+}
+
+*/
+//1-if Statement
+let x = 10;
+x=20;
+if (x > 5) {
+    console.log("x is greater than 5");
+}
+//2-else Statement
+let y = 3;
+
+if (y > 5) {
+    console.log("y is greater than 5");
+} else {
+    console.log("y is not greater than 5");
+}
+//3-else if Statement
+let z = 3;
+if (z > 5) {
+    console.log("z is greater than 5");
+} else if (z === 5) {
+    console.log("z is exactly 5");
+} else {
+    console.log("z is less than 5");
+}
+//4- switch 
+/*let day = 3;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    default:
+        console.log("Weekend");
+}
+let day1 = 3;
+let num=10;
+switch (day1) {
+    case 1:
+        if(num==5){
+            console.log("hello world!");  
+        }
+        console.log("Monday");
+        break;
+    case 2:
+    if(num==5){
+            console.log("hello world!");  
+        }
+        console.log("Tuesday");
+        break;
+    case 3:
+    if(num==10){
+            console.log("hello world!");  
+        }
+        console.log("Wednesday");
+        break;
+    case 4:
+    if(num==5){
+            console.log("hello world!");  
+        }
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    default:
+    if(num==5){
+            console.log("hello world!");  
+        }
+        console.log("Weekend");
+}*/
+num=5;
+let day3=4;
+switch (day3) {
+    case 1:
+        if(num==5){
+            console.log("hello world!");  
+        }
+        console.log("Monday");
+        break;
+    case 2:
+    if(num==5){
+            console.log("hello world!");  
+        }
+        console.log("Tuesday");
+        break;
+    case 3:
+    if(num==10){
+            console.log("hello world!");  
+        }
+        console.log("Wednesday");
+        break;
+    case 4:
+        var name="ali";
+        switch(name){
+            case "adam":
+            console.log("adam");    
+            break;
+            case "tala":
+            console.log("tala");    
+            break; 
+            case "ruba":
+            console.log("ruba");    
+            break; 
+            default:
+            console.log("ali");       
+
+        }
+    if(num==5){
+            console.log("hello world!");  
+        }
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    default:
+    if(num==5){
+            console.log("hello world!");  
+        }
+        console.log("Weekend");
+}
+var a="Hello<br>World!";
+document.write(a);
+
+
+let text = "";
+let i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+
+console.log(typeof "5");
+
+console.log(typeof +"5");
+console.log(typeof -"5");
+console.log(Number("5"));
+console.log(parseFloat("52"));
+console.log(parseInt("52"));
+console.log("6"-"2");
+console.log("6"/"2");
+console.log("najlaa"/"2");
+
+// var d = new Date("2022-03-25");
+// document.getElementById("demo").innerHTML=d;
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const index = fruits.indexOf("Apple");
+
+// if (index !== -1) {
+//     console.log("Fruit found in the catalog: " + index);
+// } else {
+//     console.log("Fruit not found");
+// }
+
+// /*let now = new Date();
+// alert( now ); */// نعرض التاريخ والوقت الحاليين -->
+
+
+</script>
+</body>
+</html>
+
