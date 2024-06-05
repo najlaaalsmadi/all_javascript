@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="addstring" id="addstring">
+    <button onclick="functionAdd()">Add string</button>
+    <p id="addtext" style="border: 1px solid black; padding: 10px;"></p><br>
+    <script>
+       function functionAdd()
+        {
+            var text = document.getElementById("addstring").value;
+            var currentText = document.getElementById('addtext').innerHTML;
+            document.getElementById("addtext").style.border="1px solid black";
+
+            document.getElementById('addtext') .innerHTML= currentText + text + " <br>" ;
+          
+
+               
+        }
+        
+
+    </script>
+</body>
+</html>

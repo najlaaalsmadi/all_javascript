@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="password"> Password (min 6 characters):</label>
+    <input type="password" name="password" id="password">
+    <br>
+    <label for="repet_password">Repeat password:</label>
+    <input type="password" name="repet_password" id="repet_password">
+    <br>
+    <button onclick="validatePassword()">Check</button>
+    <p id="option" style="color: red;"></p>
+
+    <script>
+        function validatePassword() {
+            var x = document.getElementById("password").value;
+            var y = document.getElementById("repet_password").value;
+            
+            if (x.length < 6) {
+                document.getElementById("option").innerHTML = "Password is too short";
+            } else if (x !== y) {
+                document.getElementById("option").innerHTML = "The two passwords don't match";
+            } else {
+                document.getElementById("option").innerHTML = "Passwords match";
+            }
+        }
+    </script>
+</body>
+</html>
