@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine free</title>
+</head>
+<body>
+    <img id="img" src="Jordan.jpg" height="100px">
+<br>
+    <select id="flagSelect" onchange="myFunction()">
+        <option value="Jordan" defult>Jordan</option>
+      <option value="Palestine">Palestine</option>
+      <option value="Syria">Syria</option>
+      <option value="Saudi">Saudi</option>
+      
+    
+      
+    </select>
+    <br>
+    <script>
+   
+function myFunction() {
+  var x = document.getElementById("flagSelect").value;
+  if(x=="Palestine"){
+    document.getElementById("img").src = "Palestine.jpg";
+  }
+  else if(x=="Jordan"){
+    document.getElementById("img").src = "Jordan.jpg";
+
+  }
+  else if(x=="Syria"){
+    document.getElementById("img").src = "Syria.jpg";
+
+  }
+  else if(x=="Saudi"){
+    document.getElementById("img").src = "Saudi.jfif";
+
+  }
+   
+}
+    </script>
+
+</body>
+</html>

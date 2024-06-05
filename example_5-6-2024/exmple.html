@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<p id="demoId"></p>-->
+
+     <!-- <p>This is a paragraph.</p>0
+    <p>This is a paragraph.</p>1
+    <p>This is a paragraph.</p>2 -->
+
+    <!--<ul>
+        <li>Najlaa</li>
+        <li>douh</li>
+        <li>Raneem</li>
+        <li>Anas</li>
+
+        
+    </ul>-->
+     
+    <!-- <img id="image" src="html.png" width="160" height="120"> -->
+   
+<div>
+    <p class="test1">hello world 1</p>
+    <p class="test1">hello world 2</p>
+    <p class="test1">hello world 3</p>
+</div>
+ 
+<!-- <p id="p2">Hello World!</p> -->
+
+<!-- <div class="example color">
+    <p>This is a paragraph.</p>
+  </div>
+  <br>
+  <div class="example color">
+    <p>This is a paragraph.</p>
+  </div>
+  <br>
+  <div class="example color">
+    <p>This is a paragraph.</p>
+  </div> -->
+  <!--
+
+<p id="color1">Hello World style!</p>
+<p id="color2">Hello World style!</p>
+ -->
+ <p id="demo"></p>
+<script>
+// document.getElementById("demoId").innerHTML = "Hello World getElementById";
+// document.getElementsByTagName("p")[2].innerHTML = "Hello World! Tag name";
+// document.getElementsByTagName("li")[1].innerHTML = "Ahmad Li";
+
+
+// document.getElementById("image").src = "img.jfif";
+
+document.getElementsByClassName("test1")[1].innerHTML="getElementsByClassName";
+// document.getElementById("p2").style.fontSize = "100px";
+// const collection1 = document.getElementsByClassName("example color");
+// collection1[2].style.backgroundColor = "red";
+// document.getElementById("color2").style.color = "green";
+// document.getElementById("color2").style.fontFamily = "Arial";
+// document.getElementById("color2").style.fontSize = "larger";
+// //document.getElementsByClassName("test").innerHTML="ALL";
+
+const collection = document.getElementsByTagName("*");
+let text = "";
+for (let i = 0; i < collection.length; i++) {
+  text += collection[i].tagName + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+
+
+</script>
+</body>
+
+</html>

@@ -19,6 +19,7 @@ var preson={
         var result="You will be a   " +this.job_title + " in  " + this.geographic_location + " and married to   " +this.partner_name+ "   with  " +this.number_of_children +"   kids  ";
        return result;
     }
+  
 };
 console.log(preson.tellFortune());
 
@@ -145,3 +146,97 @@ function  double3(x) {
   
   
   
+/*
+7
+Write a function called cube that:
+accept 1 parameter and calculate the cube of this number
+
+Ex: cube(4)
+=> 64
+*/
+function calculate_the_cube(cube){
+    return cube*cube*cube;
+}
+cube=prompt("Please enter your cube",4);
+console.log(calculate_the_cube(cube));
+
+/*Write a function called multiply that:
+accept 2 parameters and calculate the multiply of these 2 numbers
+
+Ex: multiply(3,4)
+=> 12
+Ex: multiply(5,4)
+=> 20
+*/
+function multiply(number1,number2){
+  result=number1*number2;
+return result;
+}
+let number1=prompt("Please enter your number one",5);
+let number2=prompt("Please enter your number two",4);
+console.log(`resultmultiply(${number1},${number2})=`+  multiply(number1,number2));
+/*
+9
+Write a function called canIGetADrivingLicense that:
+accept 1 parameter represent the age
+and if the age greater than or equal to 20 return "yes you can"
+otherwise return "please come back after X years to get one"
+
+Ex: canIGetADrivingLicense(21)
+=> "yes you can"
+
+Ex: canIGetADrivingLicense(17)
+=> "please come back after 3 years to get one"
+
+Ex: canIGetADrivingLicense(20)
+=> "yes you can"
+
+*/
+function canIGetADrivingLicense(number_age)
+{
+  if(number_age <= 20){
+    let resultAge;
+    resultAge="yes you can";
+    return resultAge;
+  }
+  else{
+    let resultAge;
+    resultAge="please come back after X years to get one";
+    return resultAge;
+  }
+}
+let number_age=prompt("plase enter you number age",20);
+console.log(canIGetADrivingLicense(number_age));
+
+
+/*
+10
+Write a function called sameLength
+that accepts two strings as arguments,
+and returns true if those strings have the same length, and false otherwise.
+
+**hint: how we can know string length   Ex: : "tree".length   => 4
+
+Ex: sameLength("tree","clue")
+=> true
+
+Ex: sameLength("tree","car")
+=> false
+*/
+function sameLength(string1,string2){
+  length1=string1.length;
+  length2=string2.length;
+  if(length1==length2){
+    return True;
+
+  }
+  else{
+    return false;
+  }
+}
+string1=prompt("plase enter you String1","tree");
+string2=prompt("plase enter you String2","car");
+
+console.log(sameLength(string1,string2));
+
+
