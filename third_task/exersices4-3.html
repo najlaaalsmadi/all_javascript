@@ -7,12 +7,12 @@
 </head>
 <body>
     <label for="password"> Password (min 6 characters):</label>
-    <input type="password" name="password" id="password">
+    <input type="password" name="password" id="password" onclick="validatePassword()">
     <br>
     <label for="repet_password">Repeat password:</label>
-    <input type="password" name="repet_password" id="repet_password">
+    <input type="password" name="repet_password" id="repet_password" onmousemove="validatePassword()">
     <br>
-    <button onclick="validatePassword()">Check</button>
+    <!-- <button onclick="validatePassword()">Check</button> -->
     <p id="option" style="color: red;"></p>
 
     <script>
