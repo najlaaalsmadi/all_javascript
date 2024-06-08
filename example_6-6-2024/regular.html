@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string="Hello Najlaa Al-smadi Orange welcomes you najlaa";
+        let regex=/najlaa/ig;
+        console.log(string.match(regex));
+
+        let tld="com Net org Info code Io";
+        let tldre=/(org|info|io)/ig;
+        console.log(tld.match(tldre));
+
+        let nums="12345678910";
+        let numsRe=/[0-2]/g;
+        console.log(nums.match(numsRe));
+
+        let notnums="12345678910";
+        let numsRee=/[^0-2]/g;
+        console.log(notnums.match(numsRee));
+
+        let specialnums="1$2@3#4%5&6|78910";
+        let specialnumre=/[^0-9]/g;
+        console.log(specialnums.match(specialnumre));
+         
+        let practice="os1 os10s os2 oc8 os80s";
+        let practiceRe=/os[5-9]/g;
+        console.log(practice.match(practiceRe));
+
+
+        let mystring="AaBacdefG123!234%^&*";
+        let atoz=/[a-z]/g;
+        console.log(mystring.match(atoz));
+
+
+        let mystring2="AaBacdefG123!234%^&*A@2";
+        let atoz2=/[A-Z]@[2-4]/g;
+        console.log(mystring2.match(atoz2));
+
+
+        let mystring3="najlaak399@gmail.com";
+        let atoz3=/[a-z]@(org|info|io)/g;
+        console.log(mystring2.match(atoz2));
+          </script>
+</body>
+</html>

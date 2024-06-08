@@ -13,7 +13,7 @@
     <input type="password" name="repet_password" id="repet_password" onmousemove="validatePassword()">
     <br>
     <!-- <button onclick="validatePassword()">Check</button> -->
-    <p id="option" style="color: red;"></p>
+    <p id="option" ></p>
 
     <script>
         function validatePassword() {
@@ -21,12 +21,16 @@
             var y = document.getElementById("repet_password").value;
             
             if (x.length < 6) {
-                document.getElementById("option").innerHTML = "Password is too short";
+             document.getElementById("option").innerHTML = "Password is too short";
+            document.getElementById("option").style.color="red";
             } else if (x !== y) {
                 document.getElementById("option").innerHTML = "The two passwords don't match";
-            } else {
+                document.getElementById("option").style.color="red";
+                        } else {
                 document.getElementById("option").innerHTML = "Passwords match";
-            }
+                let new3=document.getElementById("option").style.color="red";    
+                   
+             }
         }
     </script>
 </body>

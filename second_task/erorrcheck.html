@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function longerString(string_12, string_22, string_32, string_42, string_52) {
+  let y = "";
+  let a1 = string_12 ? string_12.length : 0;
+  console.log(a1);
+  console.log(string_12);
+  let b1 = string_22 ? string_22.length : 0;
+  console.log(b1);
+  console.log(string_22);
+  let c1 = string_32 ? string_32.length : 0;
+  console.log(c1);
+  console.log(string_32);
+  let d1 = string_42 ? string_42.length : 0;
+  console.log(d1);
+  console.log(string_42);
+  let e1 = string_52 ? string_52.length : 0;
+  console.log(e1);
+  console.log(string_52);
+
+  if (a1 > b1 && a1 > c1 && a1 > d1 && a1 > e1) {
+    console.log(string_12);
+    return string_12;
+  } else if (b1 > a1 && b1 > c1 && b1 > d1 && b1 > e1) {
+    console.log(string_22);
+    return string_22;
+  } else if (c1 > a1 && c1 > b1 && c1 > d1 && c1 > e1) {
+    console.log(string_32);
+    return string_32;
+  } else if (d1 > a1 && d1 > b1 && d1 > c1 && d1 > e1) {
+    console.log(string_42);
+    return string_42;
+  } else if (e1 > a1 && e1 > b1 && e1 > c1 && e1 > d1) {
+    console.log(string_52);
+    return string_52;
+  }
+}
+
+let string_12 = prompt("Please enter longer string1", "air");
+let string_22 = prompt("Please enter longer string2", "school");
+let string_32 = prompt("Please enter longer string3", "car");
+let string_42 = prompt("Please enter longer string4", "by");
+let string_52 = prompt("Please enter longer string5", "github");
+
+console.log(longerString(string_12, string_22, string_32, string_42, string_52));
+    </script>
+</body>
+</html>
