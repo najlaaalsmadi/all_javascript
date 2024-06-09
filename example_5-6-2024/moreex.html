@@ -13,21 +13,21 @@
 </head>
 <body>
  
-  <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
-  <p id="demo"></p>
+  <!-- <button onmousemove="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+  <p id="demo"></p> -->
   Enter your name: <input type="text" id="fname" onchange="upperCase()">
 <p>When you leave the input field, a function transforms the input to upper case.</p>
 <h1>JavaScript HTML Events</h1>
 <h2>The onclick Attribute</h2>
-
+<!--
 <h2 onmouseover="this.innerHTML='Ooops!'">Click on this text!</h2>
-  <!--<h1 id="myH1">The Element Object</h1>
+  <h1 id="myH1">The Element Object</h1>
   
   <p>Click "Add Class" to add a class attribute to the h1 element:</p>
   
   <button onmouseover="myFunction1()">Add Class</button>--><!--onclick,onmouseover-->
   <!--Enter some text: <input type="text" name="txt" value="Hello" onchange="myFunction(this.value)">-->
-    <p>Select a new car from the list.</p>
+    <!-- <p>Select a new car from the list.</p>
     <p id="demoselect"></p>
     <select id="mySelect" onchange="myFunction()">
       <option value="Audi">Audi</option>
@@ -37,16 +37,16 @@
     </select>
     <button id="showMoreBtn">Show More</button>
 <p class="extra-content" style="display: none;">Extra paragraph 1</p>
-<p class="extra-content" style="display: none;">Extra paragraph 2</p>
+<p class="extra-content" style="display: none;">Extra paragraph 2</p> --> 
 <script>
 //   function myFunction1() {
 //   document.getElementById("myH1").setAttribute("class", "democlass"); 
 // }
 
-function myFunction() {
-  var x = document.getElementById("mySelect").value;
-  document.getElementById("demoselect").innerHTML = "You selected: " + x;
-}
+// function myFunction() {
+//   var x = document.getElementById("mySelect").value;
+//   document.getElementById("demoselect").innerHTML = "You selected: " + x;
+// }
 
 
 

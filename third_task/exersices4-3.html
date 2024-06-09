@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      
+    </style>
 </head>
 <body>
     <label for="password"> Password (min 6 characters):</label>
-    <input type="password" name="password" id="password" onclick="validatePassword()">
+    <input type="password" name="password" id="password">
     <br>
     <label for="repet_password">Repeat password:</label>
     <input type="password" name="repet_password" id="repet_password" onmousemove="validatePassword()">
     <br>
-    <!-- <button onclick="validatePassword()">Check</button> -->
+   
     <p id="option" ></p>
-
+<div id="button1"></div>
     <script>
         function validatePassword() {
             var x = document.getElementById("password").value;
@@ -28,7 +31,14 @@
                 document.getElementById("option").style.color="red";
                         } else {
                 document.getElementById("option").innerHTML = "Passwords match";
-                let new3=document.getElementById("option").style.color="red";    
+                let new3=document.getElementById("option").style.color="red"; 
+                var button=document.getElementById("button1").innerHTML="<button>submit</button>";
+                // var button =document.createElement("button");
+                // button.appendChild(document.createTextNode("Submit"));
+                // page=document.getElementById("button1");
+                // page.appendChild(button);
+
+               
                    
              }
         }

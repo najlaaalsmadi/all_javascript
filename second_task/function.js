@@ -518,7 +518,7 @@ function average(g1,g2,g3,g4,g5){
 Write a function called randomNumber
 that didnt takes any parameter
 and returns a random number between 0-1
-** hint: you can seacrh using MDN
+** hint: you can seacr7h using MDN
 
 Ex: randomNumber()
 => 0.2278
@@ -555,8 +555,8 @@ Ex: randomBetweenNumbers(3,100)
  function randomBetweenNumbers(rnum1,rnum2){
   return Math.random()*(rnum2-rnum1)+rnum1;
  }
- let rnum1=parseInt(prompt("Please enter Number Min",3));
- let rnum2=parseInt(prompt("Please enter Number Max",100));
+ let rnum1=parseInt(prompt("Please enter Number Min",1));
+ let rnum2=parseInt(prompt("Please enter Number Max",8));
 
  console.log(randomBetweenNumbers(rnum1,rnum2));
 /*
