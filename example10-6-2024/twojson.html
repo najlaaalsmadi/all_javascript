@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        // استخدام fetch لجلب ملف JSON
+        fetch('date.json')
+            .then(response => response.json()) // تحويل الاستجابة إلى كائن JSON
+            .then(data => {
+                // طباعة المحتويات
+                console.log(data);
+            })
+            .catch(error => console.error('حدث خطأ:', error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to validate the name
+function validateName(name) {
+    const nameRegex = /^[a-zA-Z\s]+$/;//\s whiteSpaces   //^ بدايه $ نهايه
+//+مره او اكثر من مره 
+    return nameRegex.test(name);
+}
+
+// Function to validate the email
+function validateEmail(email) {
+    const emailRegex = /^[\w]+@[\w@]+\.(com|edu)+$/;//[^\s@]لا تبدا ب white space 
+    return emailRegex.test(email);
+}
+
+// Function to validate the Jordanian phone number
+function validatePhoneNumber(phone) {
+    const phoneRegex = /^(\+962|0)?7[789]\d{7}$/;
+    return phoneRegex.test(phone);
+}
+
+// Example usage:
+const name = "Najlaa Al-Smadi";
+const email = "najlaa_alsmadi@example.com";
+const phone = "+962777956583";
+
+console.log(validateName(name)); // true or false
+console.log(validateEmail(email)); // true or false
+console.log(validatePhoneNumber(phone)); // true or false
+
+    </script>
+</body>
+</html>

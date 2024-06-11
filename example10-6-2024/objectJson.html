@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read JSON Data</title>
+</head>
+<body>
+    <script>
+        async function fetchData() {
+            try {
+                // Fetch the JSON file
+                const response = await fetch('json.json'); // تقوم هذه الدالة بجلب الملف data.json من نفس المجلد الذي يتواجد فيه ملف الـ HTML.
+                
+                // التحقق من نجاح عملية الجلب
+                if (!response.ok) { // يتم تنفيذ هذا الجزء عند نجاح عملية الجلب.
+                    throw new Error('Network response was not ok ' + response.statusText);
+                    // التحقق مما إذا كانت الاستجابة ناجحة أم لا. إذا لم تكن ناجحة، يتم رمي خطأ.
+                }
+                
+                // تحويل محتوى الاستجابة إلى كائن JSON
+                const data = await response.json(); // تحويل محتوى الاستجابة إلى كائن JSON.
+                
+                // Print the contents
+                console.log(data); // يتم تنفيذ هذا الجزء بعد تحويل الاستجابة إلى كائن JSON.
+            } catch (error) {
+                // التعامل مع الأخطاء التي تحدث أثناء عملية الجلب أو تحويل البيانات
+                console.error('There was a problem with the fetch operation:', error); // يتم تنفيذ هذا الجزء إذا حدث خطأ أثناء عملية الجلب أو تحويل البيانات.
+            } finally {
+                console.log('Fetch attempt finished.'); // يتم تنفيذ هذا الجزء سواءً حدث خطأ أم لا.
+            }
+        }
+
+        // استدعاء الدالة لجلب البيانات
+        fetchData();
+    </script>
+</body>
+</html>

@@ -40,11 +40,37 @@
         let mystring2="AaBacdefG123!234%^&*A@2";
         let atoz2=/[A-Z]@[2-4]/g;
         console.log(mystring2.match(atoz2));
+        let aAndcAnde=/[ace]/g;
+        console.log(mystring2.match(aAndcAnde));
+        let NotaAndcAnde=/[^ace]/g;
+        console.log(mystring2.match(NotaAndcAnde));
+        let lettersCapsAndSmall=/[a-zA-Z]/g;
+        console.log(mystring2.match(lettersCapsAndSmall));
+        let NonlettersCapsAndSmall=/[^a-zA-Z]/g;
+        console.log(mystring2.match(NonlettersCapsAndSmall));
+
+//.=>matches any character except newline or other line terminators
+//\w=>matches word characters [a-z,A-Z,0-9 and underscore]
+let email='o@@@g...com o@g.com o@g.net A@Y.com o-g.com o@s.org 1@1.com';
+let dot =/./g;
+let word =/\w/g;
+let wordnot =/\W/g;
+let valid=/\w@\w.(com|net)/g;
+console.log(email.match(dot));
+console.log(email.match(word));
+console.log(email.match(wordnot));
+console.log(email.match(valid));
 
 
-        let mystring3="najlaak399@gmail.com";
-        let atoz3=/[a-z]@(org|info|io)/g;
-        console.log(mystring2.match(atoz2));
+
+
+
+
+
+
+        // let mystring3="najlaak399@gmail.com";
+        // let atoz3=/[a-z]@(org|info|io)/g;
+        // console.log(mystring2.match(atoz2));
           </script>
 </body>
 </html>
