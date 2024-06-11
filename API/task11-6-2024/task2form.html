@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="success.html">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" onchange="updateLocalStorage_name()">
+        <br> <br>
+        <label for="Age">Age:</label>
+        <input type="text" name="Age" id="Age" onchange="updateLocalStorage_Age()">
+        <br> <br>
+        <label for="Gender">Gender:</label>
+        <input type="text" name="Gender" id="Gender" onchange="updateLocalStorage_Gender()">
+        <br> <br>
+        <label for="Birth">Birth Data:</label>
+        <input type="date" name="Birth" id="Birth" onchange="updateLocalStorage_Birth()">
+        <br> <br>
+        <label for="img">Your Image:</label>
+        <input type="file" name="file" id="file" onchange="updateLocalStorage_file()">
+        <br>
+        <hr>
+        <label for="description">description:</label>
+        <input type="text" name="description" id="description" onchange="updateLocalStorage_description()">
+        <br> <br>
+        <label for="major&university">major & university:</label>
+        <input type="text" name="major&university" id="major_university" onchange="updateLocalStorage_major_university()">
+        <br> <br>
+        <label for="programming language">programming language</label>
+        <br>
+        <input type="checkbox" name="html" id="html" onchange="updateLocalStorage_html()"><label for="html">html</label>
+        <input type="checkbox" name="css" id="css" onchange="updateLocalStorage_css()"><label for="css">css</label>
+        <input type="checkbox" name="javascript" id="javascript"  onchange="updateLocalStorage_javascript()"><label for="javascript">javascript</label>
+        <br> <br>
+        <label for="siblings number">siblings number</label>
+        <input type="number" name="siblings number" id="siblings_number" onchange="updateLocalStorage_siblings_number()">
+        <br> <br>
+        <label for="description of siblings">description of siblings</label>
+        <input type="text" name="description of siblings" id="description_of_siblings" onchange="updateLocalStorage_description_of_siblings()">
+        <br> <br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+         function updateLocalStorage_name() {
+            var fullname = document.getElementById("name").value;
+            console.log(fullname);
+            localStorage.setItem('name', fullname);
+        }
+        function updateLocalStorage_Age(){
+            var age=document.getElementById("Age").value;
+            console.log(age);
+            localStorage.setItem('Age', age);
+
+        }
+        function updateLocalStorage_Gender(){
+            var Gender=document.getElementById("Gender").value;
+            console.log(Gender);
+            localStorage.setItem('Gender', Gender);
+
+        }
+        function updateLocalStorage_Birth(){
+            var Birth=document.getElementById("Birth").value;
+            console.log(Birth);
+            localStorage.setItem('Birth',Birth);
+        }
+       function  updateLocalStorage_file(){
+        file=document.getElementById("file").value;
+        console.log(file);
+        localStorage.setItem('file',file);
+        }
+
+        function updateLocalStorage_description(){
+            description=document.getElementById("description").value;
+            console.log(description);
+            localStorage.setItem('description',description);
+        }
+
+        function updateLocalStorage_major_university(){
+            major_university=document.getElementById("major_university").value;
+            console.log(major_university);
+            localStorage.setItem('major_university',major_university)
+        }
+        function updateLocalStorage_html() {
+    var check = document.getElementById("html").checked;
+    var htmlValue = document.getElementById("html").value;
+
+    if (check) {
+        console.log(htmlValue); // يتم طباعة قيمة العلامة فقط عندما تكون محددة
+        localStorage.setItem('html', htmlValue);
+    }
+}
+function updateLocalStorage_css(){
+    var check = document.getElementById("css").checked;
+    var cssValue = document.getElementById("css").value;
+
+    if (check) {
+        console.log(htmlValue); // يتم طباعة قيمة العلامة فقط عندما تكون محددة
+        localStorage.setItem('css', cssValue);
+    }
+}
+
+function updateLocalStorage_javascript(){
+    var check = document.getElementById("javascript").checked;
+    var javascriptValue = document.getElementById("javascript").value;
+
+    if (check) {
+        console.log(javascriptValue); // يتم طباعة قيمة العلامة فقط عندما تكون محددة
+        localStorage.setItem('javascript', javascript);
+    }
+}
+ function updateLocalStorage_siblings_number(){
+           var siblings_number=document.getElementById("siblings_number").value;
+            console.log(siblings_number);
+            localStorage.setItem('siblings_number',siblings_number);
+ }
+ function updateLocalStorage_description_of_siblings(){
+             var description_of_siblings=document.getElementById("description_of_siblings").value;
+            console.log(description_of_siblings);
+            localStorage.setItem('description_of_siblings',description_of_siblings);
+ 
+ }
+         </script>
+</body>
+</html>

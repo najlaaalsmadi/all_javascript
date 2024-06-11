@@ -6,14 +6,19 @@
 </head>
 <body>
     <script>
-        // استخدام fetch لجلب ملف JSON
-        fetch('date.json')
-            .then(response => response.json()) // تحويل الاستجابة إلى كائن JSON
-            .then(data => {
-                // طباعة المحتويات
-                console.log(data);
-            })
-            .catch(error => console.error('حدث خطأ:', error));
+        // دالة غير متزامنة لجلب البيانات من ملف JSON
+        async function fetchData() {
+            try {
+                const response = await fetch('date.json'); // انتظار استجابة fetch
+                const data = await response.json(); // انتظار تحويل الاستجابة إلى كائن JSON
+                console.log(data); // طباعة المحتويات
+            } catch (error) {
+                console.error('حدث خطأ:', error); // التعامل مع الأخطاء
+            }
+        }
+
+        // استدعاء الدالة لجلب البيانات
+        fetchData();
     </script>
 </body>
 </html>
