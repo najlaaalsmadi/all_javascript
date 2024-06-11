@@ -40,7 +40,7 @@
                 console.log("it is Valid");
             }
             else{
-                console.log("number is not allow");
+                console.log("firstname is not allow");
             }
             }
            function updateLocalStorage_lname(){
@@ -51,20 +51,10 @@
                 console.log("it is Valid");
             }
             else{
-                console.log("number is not allow");
+                console.log("lastname is not allow");
             }
            }
-           function updateLocalStorage_lname(){
-            const lname=document.getElementById("lname").value;
-            const lnamePattern=/^[a-zA-Z]+[^0-9]$/;
-            const isValid=lnamePattern.test(lname);
-            if(isValid==true){
-                console.log("it is Valid");
-            }
-            else{
-                console.log("number is not allow");
-            }
-           }
+           
            function updateLocalStorage_Birth(){
             const Birth=document.getElementById("Birth").value;
             var dateformat = /^\d{4}-\d{2}-\d{2}$/;
@@ -77,8 +67,17 @@
             }
            }
            function updateLocalStorage_email(){
-            
+            const email=document.getElementById("email").value;
+            var emailformat = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+            const isValid=emailformat.test(email);
+            if(isValid==true){
+                console.log("it is Valid email");
+            }
+            else{
+                console.log("email is not allow");
+            }
            }
+           
         </script>
     </body>
 </html>
